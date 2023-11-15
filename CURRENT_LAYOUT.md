@@ -3,7 +3,7 @@
  build system: poetry
  python layout: src/py/<package name> i.e. "pytomlrs"
  rust layout: src/rust/src/<lib.rs etc.>
- Cargo.toml workspace setting: true
+ Cargo.toml workspace setting: false
 
  # Build status on various commands
 
