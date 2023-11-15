@@ -1,0 +1,11 @@
+[package]
+# name = "pytomlrs2"
+# authors.workspace = true
+edition.workspace = true
+version.workspace = true
+
+
+[dependencies]
+pyo3 = { version = "0.19.*", features = [ "extension-module" ] }
+serde = "1.0.*"
+toml = { version = "0.7.6", features = [ "parse" ] }

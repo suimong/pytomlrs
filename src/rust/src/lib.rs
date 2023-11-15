@@ -31,7 +31,7 @@ pub fn from_toml(py: Python, obj: PyObject) -> PyResult<PyObject> {
 }
 
 #[pymodule]
-fn pytomlrs<'py>(_py: Python<'py>, m: &PyModule) -> PyResult<()> {
+fn pytomlrs4<'py>(_py: Python<'py>, m: &PyModule) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(to_toml, m)?)?;
     m.add_function(wrap_pyfunction!(from_toml, m)?)?;
     Ok(())

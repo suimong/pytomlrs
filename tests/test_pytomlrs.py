@@ -1,4 +1,4 @@
-import pytomlrs
+import pytomlrs4
 
 python_value = {
     'a': {
@@ -19,9 +19,9 @@ e = [1.2, "foobar"]
 """.strip()
 
 def test_to_toml():
-    actual = pytomlrs.to_toml(python_value)
+    actual = pytomlrs4.to_toml(python_value)
     assert actual.strip() == expected_toml
 
 def test_from_toml():
-    actual = pytomlrs.from_toml(expected_toml)
+    actual = pytomlrs4.from_toml(expected_toml)
     assert actual == python_value
