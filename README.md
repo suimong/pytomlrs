@@ -54,7 +54,7 @@ enum PY_LAYOUT:
     src_deep_pkgname
 
 enum RUST_LAYOUT:
-    conventional  // ROOT_DIR/src/{lib.rs etc.}, do not specify workspace in cargo.toml
+    src  // ROOT_DIR/src/{lib.rs etc.}, do not specify workspace in cargo.toml
     workspace_src_bare  // ROOT_DIR/src/{lib.rs etc.}, specify workspace in ROOT_DIR/cargo.toml
     workspace_src_shallow  // ROOT_DIR/crates/src+Cargo.toml/{lib.rs etc.}, specify workspace in ROOT_DIR/cargo.toml
     workspace_src_deep  // ROOT_DIR/src/rust+Cargo.toml/src/{lib.rs}
