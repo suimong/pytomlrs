@@ -3,7 +3,18 @@ PyTOML.rs
 
 Python object (de)serializer to/from TOML using Rust.
 
-## Example
+## Development
+
+ref: https://zenn.dev/yyu/articles/3b87c9499fddde
+
+
+
+```shell
+poetry run maturin develop
+poetry run maturin build
+```
+
+## Usage Example
 
 ```python
 import pytomlrs
