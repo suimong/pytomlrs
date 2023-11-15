@@ -41,7 +41,7 @@ e = [1.2, "foobar"]
 
 ## Naming format of the dev branches
 
-format: `dev-{BUILD_SYSTEM}-{PY_LAYOUT}-{RUST_LAYOUT}-{EXTRAS}`
+format: `dev-{BUILD_SYSTEM}-{PY_LAYOUT}-{RUST_LAYOUT}(-{EXTRAS})?`
 where:
 ```rust
 enum BUILD_SYSTEM:
